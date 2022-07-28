@@ -18,8 +18,12 @@ export default function NavBar(){
     //enviamos el texto ingresado por el usuario
     function handleSubmit(event){
         event.preventDefault();
-        dispatch(getResults(text));
-        setText('');
+        if(text !== ''){
+            dispatch(getResults(text));
+            setText('');
+        }else{
+            alert('El campo de texto no se puede enviar vacío')
+        }
     }
 
     return(
