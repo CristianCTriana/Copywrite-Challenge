@@ -1,5 +1,8 @@
-export default function ItemList(){
+
+export default function ItemList({text}){
     return(
-        <div>ItemList</div>
+        <div>
+            <label>{text}</label>
+        </div>
     )
 }
