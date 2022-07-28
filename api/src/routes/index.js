@@ -34,13 +34,16 @@ router.get('/', async (req, res, next) => {
   //
 
   const { text } = req.query
-
-  if (onlyLetters(text)) {
-    res.send(invertedText(text))
-  } else {
-    res.status(400).send({
-      text: 'no text'
-    })
+  try {
+    if (onlyLetters(text)) {
+      res.send(invertedText(text))
+    } else {
+      res.status(400).send({
+        text: 'no text'
+      })
+    }
+  } catch (error) {
+    
   }
 })
 
