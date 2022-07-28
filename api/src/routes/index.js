@@ -2,15 +2,17 @@ const { Router } = require('express')
 
 const router = Router()
 
+//funcion que invierte el texto 
 const invertedText = (text) => {
   const originalText = text
   text = text.split('').reverse().join('')
   return {
     text,
-    palindrome: (originalText === text)
+    palindrome: (originalText === text)// aqui verificamos que efectimente es palindroma la plabra ingresada
   }
 }
 
+//verificamos que unicamente posea letras
 const onlyLetters = (text) => {
   const letters = 'abcdefghijklmnñopqrstuvwxyz'
 

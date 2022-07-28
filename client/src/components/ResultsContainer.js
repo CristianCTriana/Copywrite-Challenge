@@ -4,7 +4,7 @@ import {useSelector} from "react-redux";
 
 export default function ResultsContainer(){
 
-    const results = useSelector((state) => state.results);
+    const results = useSelector((state) => state.results);//todos los resultados desde redux
 
     return(
         <div className="card">

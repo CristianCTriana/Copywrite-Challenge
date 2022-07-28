@@ -7,13 +7,15 @@ export default function NavBar(){
 
     const dispatch = useDispatch();
 
-    const [text, setText] = useState('');
+    const [text, setText] = useState('');//estado inicial para controlar el input
 
+    //cambiamos el estado cada vez que el usuario ingresa una letra nueva
     function handleInputChange(event){
         event.preventDefault();
         setText(event.target.value);
     }
 
+    //enviamos el texto ingresado por el usuario
     function handleSubmit(event){
         event.preventDefault();
         dispatch(getResults(text));
