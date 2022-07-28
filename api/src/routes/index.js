@@ -11,7 +11,7 @@ const invertedText = (text) => {
   }
 }
 
-router.get('/iecho', async (req, res) => {
+router.get('/', async (req, res) => {
   const { text } = req.query
   res.send(invertedText(text))
 })
