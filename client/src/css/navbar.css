@@ -1,0 +1,7 @@
+.navbar{
+    justify-content: center !important
+}
+
+.form-control{
+    max-width: 40rem;
+}
