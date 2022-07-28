@@ -7,7 +7,7 @@ function rootReducer(state=initialState, {type, payload}){
         case 'GET_RESULTS':
             return{
                 ...state,
-                results: [...state.results, payload]
+                results: [payload, ...state.results]
             }
         default:
             return{

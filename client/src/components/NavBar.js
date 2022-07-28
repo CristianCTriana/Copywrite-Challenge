@@ -17,12 +17,13 @@ export default function NavBar(){
     function handleSubmit(event){
         event.preventDefault();
         dispatch(getResults(text));
+        setText('');
     }
 
     return(
-        <nav className="navbar navbar-light bg-light">
-            <input className="form-control mr-sm-2" onChange={(event)=>{handleInputChange(event)}} type="text" placeholder="Text ..."/>
-            <button className="btn btn-outline-success my-2 my-sm-0" onClick={(event)=>{handleSubmit(event)}} type="submit">Search</button>
+        <nav className="navbar navbar-expand-lg bg-light">
+            <input className="form-control" onChange={(event)=>{handleInputChange(event)}} value={text} type="text" placeholder="Text ..."/>
+            <button className="btn btn-primary" onClick={(event)=>{handleSubmit(event)}} type="submit">Search</button>
         </nav>
     )
 }
