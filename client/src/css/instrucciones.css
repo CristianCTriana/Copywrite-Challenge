@@ -1,8 +1,7 @@
 .containerText{
     text-align: center;
     margin-top: 15px;
-    max-width: 50%;
-    margin-left: 25%;
     padding: 5px 10px;
-    width: 35rem;
+    width: 50%;
+    margin-left: 25%;
 }
