@@ -2,7 +2,7 @@ const { Router } = require('express')
 
 const router = Router()
 
-//funcion que invierte el texto 
+// funcion que invierte el texto
 const invertedText = (text) => {
   const originalText = text
   text = text.split('').reverse().join('')
@@ -12,7 +12,7 @@ const invertedText = (text) => {
   }
 }
 
-//verificamos que unicamente posea letras
+// verificamos que unicamente posea letras
 const onlyLetters = (text) => {
   const letters = 'abcdefghijklmnñopqrstuvwxyz'
 
@@ -43,7 +43,7 @@ router.get('/', async (req, res, next) => {
       })
     }
   } catch (error) {
-    
+
   }
 })
 
