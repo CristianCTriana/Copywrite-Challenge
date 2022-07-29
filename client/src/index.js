@@ -7,7 +7,7 @@ import Home from './pages/Home';
 import "bootstrap/dist/css/bootstrap.min.css";
 import axios from 'axios';
 
-axios.defaults.baseURL = 'http://localhost:3001';
+axios.defaults.baseURL = 'https://back-copywrite-challenge-ct.herokuapp.com';
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
